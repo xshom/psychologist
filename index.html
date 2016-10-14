@@ -22,32 +22,35 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		
 		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars" style="color:#fff"></i>
 					</button>
-					<a class="navbar-brand" href="#">Start Bootstrap</a>
+					<a class="navbar-brand page-scroll" href="#page-top">
+						<i class="fa fa-play-circle"></i> Psychologist
+					</a>
 				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">About</a>
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+						<li class="hidden">
+							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a href="#">Services</a>
+							<a class="page-scroll" href="#about">About us</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a class="page-scroll" href="#who">Who we are</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#what">What we do</a>
 						</li>
 					</ul>
 				</div>
@@ -59,13 +62,16 @@
 	
 	    <div class="intro-header">
 			<div class="intro-body">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm12 ">
 							<div class="intro-message">
 								<h1>Psychologist</h1>
 								<hr class="intro-divider">
-								<h3>We specialize in blablabla</h3>
+								<h3>We specialize in brain washing</h3>
+								<a href="#about" class="btn btn-circle page-scroll">
+								<i class="fa fa-angle-double-down animated"></i>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -78,7 +84,7 @@
 		
 		<!-- Page Content -->
 		
-		<section id="about" class="content-section-a text-center">
+		<section id="about" class="content section-a text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-sm-6">
@@ -96,7 +102,7 @@
 			<!-- /.container -->			
 		</section>
 		
-		<section id="who" class="content-section-b text-center">
+		<section id="who" class="content section-b text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -111,19 +117,19 @@
 					<div class="col-lg-4">
 						<img class="img-prof" src="img/tb_prof.jpg">
 						<h3>Specialist 1</h3>
-						<a href="#tb_info" class="btn btn-lg" data-toggle="collapse">Learn More</a>
+						<a href="#tb_info" id="lmore" class="btn btn-default btn-lg" data-toggle="collapse">Learn More</a>
 						<p id="tb_info" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 					<div class="col-lg-4">
 						<img class="img-prof" src="img/shm_prof.jpg">
 						<h3>Specialist 2</h3>
-						<a href="#shm_info" class="btn btn-lg" data-toggle="collapse">Learn More</a>
+						<a href="#shm_info" id="lmore" class="btn btn-lg" data-toggle="collapse">Learn More</a>
 						<p id="shm_info" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 					<div class="col-lg-4">
 						<img class="img-prof" src="img/unk_prof.jpg">
 						<h3>Specialist 3</h3>
-						<a href="#unk_info" class="btn btn-lg" data-toggle="collapse">Learn More</a>
+						<a href="#unk_info" id="lmore" class="btn btn-lg" data-toggle="collapse">Learn More</a>
 						<p id="unk_info" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 				</div>
@@ -131,7 +137,7 @@
 			<!-- /.container -->
 		</section>
 		
-		<section id="what" class="content-section-c text-center">
+		<section id="what" class="content section-c text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3">
@@ -149,6 +155,10 @@
 		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<!-- Plugin JavaScript -->
+		<script src="js/jquery.easing.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/psychologist.js"></script>
 	</body>
 	
 </html>
